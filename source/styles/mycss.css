@@ -234,3 +234,194 @@ form {
 .border_add_store button:hover {
     background-color: #f77efd8f;
 }
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.items_circle h5 {
+    margin: 20px;
+    margin-left: 60px;
+}
+
+.items_circle {
+    background-color: #e7e7e7;
+}
+
+.offer_items {
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.one_offer {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.one_offer img {
+    height: 100;
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.carousel-prev {
+    left: 60px;
+}
+
+.carousel-next {
+    right: 60px;
+}
+
+
+.carousel-container:hover .carousel-prev,
+.carousel-container:hover .carousel-next {
+    opacity: 1;
+    color: black;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.grid_items {
+    background-color: #e7e7e7;
+
+}
+
+.grid_items h5 {
+    margin: 20px;
+    margin-left: 60px;
+}
+
+
+
+.card {
+    position: relative;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.card:hover {
+    cursor: pointer;
+    border-color: #a5a5a5;
+}
+
+.card:hover .card-text {
+    text-decoration: underline;
+}
+
+
+
+.grid_items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: left;
+}
+
+.one_card {
+    flex: 1 1 calc(100% / 6);
+    /* Ширина кожної картки буде приблизно 14.2857% */
+    max-width: calc(100% / 6);
+    /* Максимальна ширина картки */
+}
+
+
+.like_item {
+    position: absolute;
+    bottom: 55%;
+    right: 15px;
+}
+
+.like_item img {
+
+    z-index: 10;
+    height: 20px;
+    width: 20px;
+}
+
+.card-body button {
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block;
+    height: 30px;
+    width: 180px;
+    color: #ffffff;
+    background-color: #9900a1;
+    border: 1px solid #9900a1;
+    border-radius: 20px;
+}
+
+.card-body button:hover {
+    background-color: #4726cae6;
+    border: 1px solid #4726cae6;
+}
+
+
+
+
+.footer {
+    background: #e7e7e7;
+
+}
+
+.footer-text {
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.footer-text p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-text .footer-header:hover {
+    text-decoration: none;
+}
+
+.footer-header {
+    font-weight: bold;
+}
