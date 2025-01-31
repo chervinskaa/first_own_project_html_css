@@ -1,3 +1,9 @@
+body,
+html {
+    overflow-x: hidden;
+}
+
+
 .where_your_parcel img {
     height: 40px;
     width: 100%;
@@ -106,56 +112,39 @@ form {
 
 .submenu {
     display: none;
-    /* Ховаємо підменю за замовчуванням */
     list-style: none;
-    /* Прибираємо маркери списку */
     padding: 0;
     margin: 0;
     position: absolute;
-    /* Абсолютне позиціонування для розташування праворуч */
+    width: 900px;
     left: 100%;
-    /* Зміщення праворуч на 100% ширини батьківського елемента */
     top: 0;
-    /* Вирівнювання по верхньому краю батьківського елемента */
     background-color: #f9f9f9;
-    /* Фон для підменю */
     border: 1px solid #ddd;
-    /* Границя для підменю */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Легке затемнення */
     z-index: 1000;
-    /* Щоб підменю було над іншими елементами */
 }
 
 .main-menu li {
     position: relative;
     list-style: none;
-    /* Батьківський елемент повинен бути `relative` */
 }
 
 .main-menu li:hover .submenu {
     display: block;
-    /* Відображаємо підменю при наведенні */
 }
 
 .submenu li {
     margin: 0;
-    /* Прибираємо відступи між пунктами підменю */
 }
 
 .submenu a {
     display: block;
-    /* Робимо посилання блочними */
     padding: 8px 12px;
-    /* Відступи для пунктів підменю */
     color: #000;
-    /* Колір тексту */
     text-decoration: none;
-    /* Прибираємо підкреслення */
     background-color: #f0f0f0;
-    /* Фон підменю */
     border-radius: 3px;
-    /* Закруглення кутів */
 }
 
 .submenu a:hover {
@@ -364,9 +353,7 @@ form {
 
 .one_card {
     flex: 1 1 calc(100% / 6);
-    /* Ширина кожної картки буде приблизно 14.2857% */
     max-width: calc(100% / 6);
-    /* Максимальна ширина картки */
 }
 
 
@@ -400,6 +387,28 @@ form {
     border: 1px solid #4726cae6;
 }
 
+.button_for_more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.button_for_more button {
+    width: 1380px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+    color: #9900a1;
+    border: 1px solid #9900a1;
+    cursor: pointer;
+}
+
+.button_for_more button:hover {
+    background-color: #9900a15f;
+}
 
 
 
